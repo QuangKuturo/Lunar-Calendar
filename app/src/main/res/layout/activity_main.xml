@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context=".MainActivity">
+
+    <TableRow>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF4296BC"
+            android:text="Chuyển đổi năm Dương lịch"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_span="2"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </TableRow>
+
+    <TableRow>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm Dương Lịch:"
+            android:textColor="#3EBF43"
+            android:textSize="18sp" />
+
+        <EditText
+            android:textSize="18sp"
+            android:text="2021"
+            android:id="@+id/edtduonglich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btnchuyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chuyển Đổi"
+            android:layout_column="1"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm Âm Lịch:"
+            android:textColor="#3EBF43"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_amlich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tân Sửu"
+            android:textSize="18sp"
+            android:textColor="#832693"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#A2AC40"
+            android:layout_span="2"/>
+    </TableRow>
+</TableLayout>
